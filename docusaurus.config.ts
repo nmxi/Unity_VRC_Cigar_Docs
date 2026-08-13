@@ -25,6 +25,10 @@ const config: Config = {
       {
         docs: {sidebarPath: './sidebars.ts'},
         blog: false,
+        gtag: {
+          trackingID: 'G-RGS859BBDE',
+          anonymizeIP: false,
+        },
         theme: {customCss: './src/css/custom.css'},
       } satisfies Preset.Options,
     ],
