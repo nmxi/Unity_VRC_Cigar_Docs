@@ -5,11 +5,8 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 import styles from './styles.module.css';
 
 const heroImages = [
-  'cigar-system-overview.png',
-  'cigar-cut-operation.png',
-  'cigar-ignite-operation.png',
-  'cigar-smoking-operation.png',
-  'cigar-ash-removal.png',
+  'hero-slide-01.jpg',
+  'hero-slide-02.jpg',
 ];
 
 export default function HomepageHero(): JSX.Element {
@@ -18,9 +15,6 @@ export default function HomepageHero(): JSX.Element {
   const backgroundClasses = [
     styles.backgroundImage0,
     styles.backgroundImage1,
-    styles.backgroundImage2,
-    styles.backgroundImage3,
-    styles.backgroundImage4,
   ];
 
   return (
@@ -31,6 +25,7 @@ export default function HomepageHero(): JSX.Element {
             key={src}
             src={src}
             alt=""
+            loading="eager"
             className={clsx(styles.backgroundImage, backgroundClasses[index])}
           />
         ))}
@@ -44,14 +39,14 @@ export default function HomepageHero(): JSX.Element {
             <Link
               className={clsx('button button--lg', styles.heroButton)}
               to="/docs/intro">
-              ドキュメントを見る
+              Documentation
             </Link>
             <Link
               className={clsx('button button--lg', styles.heroButton)}
               href="https://youtu.be/K0ycivtSE3w?si=MuhO1T0kQjnh9Yuk"
               target="_blank"
               rel="noopener noreferrer">
-              紹介動画
+              YouTube
             </Link>
             <Link
               className={clsx('button button--lg', styles.heroButton)}

@@ -30,7 +30,7 @@ const config: Config = {
     ],
   ],
   themeConfig: {
-    image: 'img/cigar-x-card.png',
+    image: 'img/cigar-x-thumbnail.jpg',
     colorMode: {
       defaultMode: 'dark',
       disableSwitch: false,
