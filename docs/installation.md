@@ -16,8 +16,19 @@ import ClickableImage from '@site/src/components/ClickableImage';
 | --- | --- |
 | Unity | 2022.3.22f1 |
 | VRChat SDK - Worlds | 3.10.4 |
+| VRChat Package Resolver Tool | 0.1.29 |
 | VRCLightVolumes | 2.1.3 |
 | lilPBR | 1.0.0 |
+
+### Unityを起動する前にVRChat Package Resolver Toolを確認する
+
+Mikinel Cigar Systemを導入するUnityプロジェクトを起動する前に、VRChat Creator Companionの`Manage Packages`を開き、`VRChat Package Resolver Tool`が導入されていることを確認してください。
+
+1. VRChat Creator Companionで導入先のプロジェクトを選択し、`Manage Packages`を開きます。
+2. `VRChat Package Resolver Tool`の`Installed Version`にバージョンが表示されていることを確認します。
+3. 導入されていない場合は、VRChat Creator Companionからパッケージを追加し、追加完了後にUnityを起動します。
+
+<ClickableImage src="/img/vcc-vrchat-package-resolver-tool.png" alt="VRChat Creator CompanionでVRChat Package Resolver Toolの導入を確認する画面" imageClassName="dependencyImage" />
 
 ### 依存パッケージの追加
 
@@ -25,15 +36,16 @@ Mikinel Cigar Systemをインポートすると、Unity上に`Mikinel Cigar Syst
 
 <ClickableImage src="/img/cigar-splash-screen-dependencies.png" alt="Splash Screenの依存パッケージ追加画面" imageClassName="dependencyImage" />
 
-`lilPBR`は必須パッケージです。Splash Screenの「依存パッケージ」から、次の手順で追加してください。
+Splash Screenで、次の順に依存パッケージを確認・追加します。
 
-1. 「lilxyzw Community Repositoryを登録」を押します。
-2. リポジトリの登録完了後、「lilPBRをこのプロジェクトに追加」を押します。
-3. 「lilPBRはプロジェクトに追加されています。」と表示されることを確認します。
+1. `VRChat Package Resolver Tool`（必須）
+   未追加の場合は「VRChat Package Resolver Toolをこのプロジェクトに追加」を押します。
+2. `lilPBR`（必須）
+   「lilxyzw Community Repositoryを登録」を押し、登録後に「lilPBRをこのプロジェクトに追加」を押します。
+3. `VRC Light Volumes`（任意）
+   使用する場合のみ、`RED_SIM Community Repository`を登録してパッケージを追加します。
 
-`VRC Light Volumes`は任意パッケージです。使用する場合は、同じ画面から「RED_SIM Community Repositoryを登録」を押した後、「VRC Light Volumesをこのプロジェクトに追加」を押してください。
-
-すべての依存パッケージを追加した後、Splash Screenに「"lilPBR"はプロジェクトに追加されています。」と「"VRC Light Volumes"はプロジェクトに追加されています。」が表示されていれば、依存パッケージの追加は完了です。
+必須パッケージの表示がどちらも「プロジェクトに追加されています。」になれば完了です。
 
 <ClickableImage src="/img/cigar-splash-screen-dependencies-complete.png" alt="すべての依存パッケージを追加した後のSplash Screen" imageClassName="dependencyImage" />
 
