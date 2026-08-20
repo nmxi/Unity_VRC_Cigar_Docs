@@ -36,12 +36,12 @@ Mikinel Cigar Systemをインポートすると、Unity上に`Mikinel Cigar Syst
 
 <ClickableImage src="/img/cigar-splash-screen-dependencies.png" alt="Splash Screenの依存パッケージ追加画面" imageClassName="dependencyImage" />
 
-Splash Screenで、次の順に依存パッケージを確認・追加します。
+Splash Screenで依存パッケージの状態を確認し、次の順にセットアップします。`VRChat Package Resolver Tool`が未追加の間は、ほかのパッケージを操作できません。
 
 1. `VRChat Package Resolver Tool`（必須）
-   未追加の場合は「VRChat Package Resolver Toolをこのプロジェクトに追加」を押します。
+   未追加の場合は「VRChat Package Resolver Toolの導入手順を開く」で手順を確認します。Unityを閉じ、VRChat Creator Companionから追加した後、Unityを再度起動してください。
 2. `lilPBR`（必須）
-   「lilxyzw Community Repositoryを登録」を押し、登録後に「lilPBRをこのプロジェクトに追加」を押します。
+   Resolverの追加後、「lilxyzw Community Repositoryを登録」を押し、登録後に「lilPBRをこのプロジェクトに追加」を押します。
 3. `VRC Light Volumes`（任意）
    使用する場合のみ、`RED_SIM Community Repository`を登録してパッケージを追加します。
 
